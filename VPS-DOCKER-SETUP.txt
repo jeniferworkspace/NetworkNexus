@@ -1,0 +1,64 @@
+
+https://www.hostg.xyz/SHGiv
+
+Steps to Set Up Docker and Docker Compose on VPS
+
+1️⃣ Connect to VPS via SSH
+ssh root@62.72.30.37
+
+2️⃣ Update System Packages
+sudo apt update -y
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+
+3️⃣ Add Docker GPG Key and Repository
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu focal stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update -y
+
+4️⃣ Install Docker and Enable It
+sudo apt install -y docker-ce
+sudo systemctl start docker
+sudo systemctl enable docker
+docker --version
+
+Installing Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+
+Setting Up a Project Directory
+sudo mkdir -p /home/root/projects
+
+To clone a GitHub repository:
+git clone https://token@github.com/your-username/your-repo.git
+
+Connecting with VS Code (Remote SSH)
+- Open VS Code
+- Use Remote SSH to connect to the host and enter your password
+- Open a folder in VS Code:
+  Ctrl + Shift + P → /home/root/projects/node-micro-practice
+
+Setting Up SSH Keys for Secure Access
+
+Generate an SSH Key
+ssh-keygen -t rsa -b 4096 -C "sangammukherjee2022@example.com"
+
+Add Key to VPS
+For Windows:
+Get-Content C:\Users\sanga\.ssh\id_rsa.pub  
+
+For Linux/Mac:
+cat ~/.ssh/id_rsa.pub
+
+Then, log in to the VPS and add the key:
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+echo "your-public-key-content" >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+
+Setting Up Environment Variables in VPS
+Ensure environment variables are properly configured for every service.
+
+Final Notes
+- The application is expected to run on PORT=3000.
+- If using Docker, ensure your services are properly defined in docker-compose.yml.
