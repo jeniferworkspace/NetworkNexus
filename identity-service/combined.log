@@ -32,3 +32,5 @@
 {"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-02-03T07:18:25.701Z"}
 {"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-02-11T10:40:52.075Z"}
 {"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-02-11T10:40:52.159Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-02-13T06:22:45.677Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-02-13T06:22:45.734Z"}

@@ -21,3 +21,6 @@
 {"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-02-11T10:41:40.547Z"}
 {"level":"info","message":"Connected to rabbit mq","service":"post-service","timestamp":"2025-02-11T10:41:40.564Z"}
 {"level":"info","message":"Post service running on port 3002","service":"post-service","timestamp":"2025-02-11T10:41:40.567Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-02-13T06:24:06.611Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"post-service","timestamp":"2025-02-13T06:24:06.624Z"}
+{"level":"info","message":"Post service running on port 3002","service":"post-service","timestamp":"2025-02-13T06:24:06.627Z"}

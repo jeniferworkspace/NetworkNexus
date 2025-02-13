@@ -25,3 +25,7 @@
 {"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-02-11T10:41:20.529Z"}
 {"level":"info","message":"Subscribed to event: post.deleted","service":"media-service","timestamp":"2025-02-11T10:41:20.608Z"}
 {"level":"info","message":"Media service running on port 3003","service":"media-service","timestamp":"2025-02-11T10:41:20.611Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-02-13T06:23:49.769Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-02-13T06:23:49.870Z"}
+{"level":"info","message":"Subscribed to event: post.deleted","service":"media-service","timestamp":"2025-02-13T06:23:49.902Z"}
+{"level":"info","message":"Media service running on port 3003","service":"media-service","timestamp":"2025-02-13T06:23:49.906Z"}
