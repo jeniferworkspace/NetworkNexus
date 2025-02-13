@@ -72,6 +72,43 @@ docker-compose up
 docker ps
 docker-compose logs api-gateway
 
+# git bash comments to connect server
+Your identification has been saved in /home/ubuntu/.ssh/id_rsa
+Your public key has been saved in /home/ubuntu/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:1fMa+3bESs3EXBBV9EwIbIDa+Nw/BofX3WPb7znZlyU jeniferworkspace2025@gmail.com
+
+git bash cmds:
+Verify the .pem File Path (Run the following command in Git Bash (MINGW64))
+ls -l /c/Users/jenif/.ssh/Network-Nexus.pem
+
+Fix File Permissions(Once you've confirmed the .pem file exists, set the correct permissions:)
+chmod 400 /c/Users/jenif/.ssh/Network-Nexus.pem
+
+SSH Into EC2(Now, try connecting to your server with git bash)
+ssh -i "/c/Users/jenif/.ssh/Network-Nexus.pem" ubuntu@13.53.131.57
+
+
+ls -l ~/.ssh/
+cat ~/.ssh/authorized_keys
+priority
+
+sudo apt install
+
+
+
+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
+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
+jeniferworkspace
+https://github.com/jeniferworkspace/NetworkNexus.git
+
+
+
+git clone https://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@github.com/jeniferworkspace/NetworkNexus.git
+
+
+
+
 # NOTE
 
 In env files is CI/CD implemented just change the urls from localhost to what you mentioned in your build script files
